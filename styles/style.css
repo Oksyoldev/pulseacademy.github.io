@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
@@ -373,3 +373,25 @@ canvas {
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        display: block !important;
+        padding-top: 30px !important; /* ← мягкий отступ */
+        margin-top: 0 !important;
+    }
+
+    .container {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .logo-container {
+        margin-top: 0 !important;
+    }
+
+    h1 {
+        margin-top: 0 !important;
+    }
+}
+
